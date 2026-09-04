@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+h1, h2, h3, .font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Cabecera Fija inspirada en Quipucamayoc */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Sección Oscura inspirada en la Imagen 3 */
+.hero-section {
+  background-color: #10233f;
+  color: white;
+  padding-top: 130px; 
+  padding-bottom: 80px;
+}
+
+/* Tarjetas Neumórficas inspiradas en la Imagen 4 */
+.kpi-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.kpi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.kpi-title {
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+.kpi-value {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #0f172a;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  letter-spacing: -0.02em;
+}
+.badge-green {
+  background-color: #ecfdf5;
+  color: #10b981;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-weight: 700;
+}
+
+/* Estilos visuales para indicarle al usuario que puede editar */
+[contenteditable="true"] {
+  border-bottom: 1px dashed transparent;
+  transition: all 0.2s;
+  outline: none;
+}
+[contenteditable="true"]:hover {
+  border-bottom: 1px dashed rgba(148, 163, 184, 0.5);
+  cursor: text;
+}
+[contenteditable="true"]:focus {
+  border-bottom: 1px solid #3b82f6;
+  background-color: rgba(59, 130, 246, 0.05);
+}
+.hero-section [contenteditable="true"]:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #fff;
+}

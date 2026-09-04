@@ -1,0 +1,6 @@
+{
+  "name": "Centro de Documentación Corporativo",
+  "description": "Centro de Documentación de la Gestión por Procesos de la UNMSM con KPIs interactivos y seguimiento de facultades.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
